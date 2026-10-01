@@ -11,5 +11,5 @@ def month_calendar(start_weekday, days):
     if b:
         a.append(" ".join(b))
     return "\n".join(a)
-
-print((month_calendar(6, 31)))
+if __name__ == "__main__":
+    print((month_calendar(6, 31)))
