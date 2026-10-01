@@ -12,4 +12,4 @@ def month_calendar(start_weekday, days):
         a.append(" ".join(b))
     return "\n".join(a)
 if __name__ == "__main__":
-    print((month_calendar(6, 31)))
+    (month_calendar(6, 31))
