@@ -8,4 +8,4 @@ if __name__ == "__main__":
     name = input("Введите имя: ")
     age = int(input("Введите возраст: "))
 
-print(century_message(name, age, current_year))
+    century_message(name, age, current_year)
