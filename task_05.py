@@ -1,3 +1,4 @@
 def greet(username):
     return f"Hello, {username}"
-print(greet("Daniil"))
+if __name__ == "__main__":
+    print(greet("Валерий"))
