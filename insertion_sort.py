@@ -1,10 +1,14 @@
 def insertion_sort(arr):
-    res = arr
-    for i in range(len(res)):
+    res = arr.copy()
+    for i in range(1, len(res)):
+        cor = res[i]
         h = i
-        while h > 0 and res[h - 1] > res[h]:
-            res[h - 1], res[h] = res[h], res[h - 1]
+        while h > 0 and res[h - 1] > cor:
+            res[h] = res[h - 1]
             h -= 1
+
+        res[h] = cor
+        
     return res
 if __name__ == "__main__":
     insertion_sort([4, 2, 7, 1, 3, 5])  # [1, 2, 3, 4, 5, 7]
