@@ -1,4 +1,3 @@
-
 class Book:
     def __init__(self, title, author, isbn, year, pages):
         if pages <= 0: raise ValueError("Количество страниц должно быть положительным")
